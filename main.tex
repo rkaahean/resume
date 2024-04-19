@@ -1,0 +1,215 @@
+%-------------------------
+% Resume in Latex
+% Author : Jake Gutierrez
+% Based off of: https://github.com/sb2nov/resume
+% License : MIT
+%------------------------
+
+\documentclass[letterpaper,11pt]{article}
+
+\usepackage{latexsym}
+\usepackage[empty]{fullpage}
+\usepackage{titlesec}
+\usepackage{marvosym}
+\usepackage[usenames,dvipsnames]{color}
+\usepackage{verbatim}
+\usepackage{enumitem}
+\usepackage[hidelinks]{hyperref}
+\usepackage{fancyhdr}
+\usepackage[english]{babel}
+\usepackage{tabularx}
+\input{glyphtounicode}
+
+
+%----------FONT OPTIONS----------
+% sans-serif
+% \usepackage[sfdefault]{FiraSans}
+% \usepackage[sfdefault]{roboto}
+% \usepackage[sfdefault]{noto-sans}
+% \usepackage[default]{sourcesanspro}
+
+% serif
+% \usepackage{CormorantGaramond}
+% \usepackage{charter}
+
+
+\pagestyle{fancy}
+\fancyhf{} % clear all header and footer fields
+\fancyfoot{}
+\renewcommand{\headrulewidth}{0pt}
+\renewcommand{\footrulewidth}{0pt}
+
+% Adjust margins
+\addtolength{\oddsidemargin}{-0.5in}
+\addtolength{\evensidemargin}{-0.5in}
+\addtolength{\textwidth}{1in}
+\addtolength{\topmargin}{-.5in}
+\addtolength{\textheight}{1.0in}
+
+\urlstyle{same}
+
+\raggedbottom
+\raggedright
+\setlength{\tabcolsep}{0in}
+
+% Sections formatting
+\titleformat{\section}{
+  \vspace{-4pt}\scshape\raggedright\large
+}{}{0em}{}[\color{black}\titlerule \vspace{-5pt}]
+
+% Ensure that generate pdf is machine readable/ATS parsable
+\pdfgentounicode=1
+
+%-------------------------
+% Custom commands
+\newcommand{\resumeItem}[1]{
+  \item\small{
+    {#1 \vspace{-2pt}}
+  }
+}
+
+\newcommand{\resumeSubheading}[4]{
+  \vspace{-2pt}\item
+    \begin{tabular*}{0.97\textwidth}[t]{l@{\extracolsep{\fill}}r}
+      \textbf{#1} & #2 \\
+      \textit{\small#3} & \textit{\small #4} \\
+    \end{tabular*}\vspace{-7pt}
+}
+
+\newcommand{\resumeSubSubheading}[2]{
+    \item
+    \begin{tabular*}{0.97\textwidth}{l@{\extracolsep{\fill}}r}
+      \textit{\small#1} & \textit{\small #2} \\
+    \end{tabular*}\vspace{-7pt}
+}
+
+\newcommand{\resumeProjectHeading}[2]{
+    \item
+    \begin{tabular*}{0.97\textwidth}{l@{\extracolsep{\fill}}r}
+      \small#1 & #2 \\
+    \end{tabular*}\vspace{-7pt}
+}
+
+\newcommand{\resumeSubItem}[1]{\resumeItem{#1}\vspace{-4pt}}
+
+\renewcommand\labelitemii{$\vcenter{\hbox{\tiny$\bullet$}}$}
+
+\newcommand{\resumeSubHeadingListStart}{\begin{itemize}[leftmargin=0.15in, label={}]}
+\newcommand{\resumeSubHeadingListEnd}{\end{itemize}}
+\newcommand{\resumeItemListStart}{\begin{itemize}}
+\newcommand{\resumeItemListEnd}{\end{itemize}\vspace{-5pt}}
+
+%-------------------------------------------
+%%%%%%  RESUME STARTS HERE  %%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+
+\begin{document}
+
+%----------HEADING----------
+% \begin{tabular*}{\textwidth}{l@{\extracolsep{\fill}}r}
+%   \textbf{\href{http://sourabhbajaj.com/}{\Large Sourabh Bajaj}} & Email : \href{mailto:sourabh@sourabhbajaj.com}{sourabh@sourabhbajaj.com}\\
+%   \href{http://sourabhbajaj.com/}{http://www.sourabhbajaj.com} & Mobile : +1-123-456-7890 \\
+% \end{tabular*}
+
+\begin{center}
+    \textbf{\Huge \scshape Sriranjan Sribhashyam} \\ \vspace{1pt}
+     \href{mailto:ranjan31051997@gmail.com}{\underline{ranjan31051997@gmail.com}} $|$ 
+    \href{https://www.linkedin.com/in/ranjansrinivas/}{\underline{linkedin.com/in/ranjansrinivas}} $|$
+    \href{https://github.com/rkaahean}{\underline{github.com/rkaahean}}
+\end{center}
+
+%-----------PROGRAMMING SKILLS-----------
+\section{Technical Skills}
+ \begin{itemize}[leftmargin=0.15in, label={}]
+    \small{\item{
+     \textbf{Languages \& Frameworks}{: Python, Javascript \& Typescript with NodeJS, NextJS, Tailwind CSS \& React} \\
+     \textbf{Domain}{: User KYC fraud, Compliance Engineering, Card Declines \& Chargebacks} \\
+     \textbf{DevOps}{: SemaphoreCI \& Github Actions, RabbitMQ, Bazel builds, docker, AWS SAA Certified (SAA\-C02)} \\
+     \textbf{Data Mangagement}{: pandas \& dask, Snowflake, PostgreSQL, dbt, ORM's (TypeORM, SQLAlchemy, Prisma)}
+    }} \\
+    \textbf{Data Science}{: Machine Learning with XGBoost, RAG's for LLM's, Retool Dashboarding}
+ \end{itemize}
+
+
+
+%-----------EXPERIENCE-----------
+\section{Experience}
+  \resumeSubHeadingListStart
+
+    \resumeSubheading
+      {Software Engineer}{Feb 2021 -- Present}
+      {ChipperCash}{Los Angeles / Remote}
+      \resumeItemListStart
+        \resumeItem{Collaborated with PMs and Marketing to build a full-stack in-app messaging system, from React Native mobile features to
+Typescript backend APIs, achieving \textless 1s user communication latency and saving ~\$80k by replacing external vendors.}
+        \resumeItem{Developed a XGBoost-based ML pipeline that cut referral fraud by 60\% and saved \$350k, identifying high-risk users for Enhanced Due Diligence during onboarding.}
+        \resumeItem{Devised a Python pipeline with dask \& dbt to de-activate Virtual Cards for users with repeated declines \& negative contribution margin, preventing the decline fees from racking up.}
+        \resumeItem{Created a machine learning model to forecast chargeback likelihood on card deposits, using transaction velocity and previous chargeback history as key features, effectively blocking ~\$1.5M in high-risk deposits.}
+        \resumeItem{Worked with MLROs to revamp watchlist screening using a faster, open-source alternative - thereby reducing false positives from 75\% to 20\% and saving about \$200k/month.}
+        \resumeItem{Devised a Python pipeline using Dask and dbt, capable of automatically declining up to 100 eligible chargebacks per minute, thereby saving 3 minutes of manual labor per chargeback and preventing losses of approximately \$40 million.}
+      \resumeItemListEnd
+      
+% -----------Multiple Positions Heading-----------
+%    \resumeSubSubheading
+%     {Software Engineer I}{Oct 2014 - Sep 2016}
+%     \resumeItemListStart
+%        \resumeItem{Apache Beam}
+%          {Apache Beam is a unified model for defining both batch and streaming data-parallel processing pipelines}
+%     \resumeItemListEnd
+%    \resumeSubHeadingListEnd
+%-------------------------------------------
+
+    \resumeSubheading
+      {Data Engineer Intern}{May 2020 -- Dec 2020}
+      {Data Sleek}{Los Angeles, USA}
+      \resumeItemListStart
+        \resumeItem{Collaborated with 5+ clients to design, translate and implement business requirements into a technical spec.}
+        \resumeItem{Delivered SQL stored procedures that perform analytical queries to detect and alert customers for changes in desired
+metrics, saving up to 20\% of the base cost per item.}
+        \resumeItem{Performed benchmark tests for several MemSQL configurations to determine optimal configuration for Time Series data, saving \$475/year while improving performance by 400\%.}
+    \resumeItemListEnd
+
+    \resumeSubheading
+      {Software Engineer Intern}{May 2018 -- July 2018}
+      {Samsung Research}{Bengaluru, India}
+      \resumeItemListStart
+        \resumeItem{Set up Open Network Automation Platform on a local server on top of Openstack, using docker containers, laying the
+foundation for dynamically scalable ML applications based on resource requirements.}
+        \resumeItem{Upgraded the ETL pipeline by deploying to Apache Kafka for streaming data to the microservice.}
+      \resumeItemListEnd
+
+  \resumeSubHeadingListEnd
+
+
+%-----------EDUCATION-----------
+\section{Education}
+  \resumeSubHeadingListStart
+    \resumeSubheading
+      {University of California, Los Angeles}{Los Angeles, USA}
+      {Masters of Science in Business Analytics}{Sep 2019 -- Dec 2020}
+    \resumeSubheading
+      {College of Engineering Guindy}{Chennai, India}
+      {BS. Computer Science \& Engineering}{Jul 2015 -- May 2019}
+  \resumeSubHeadingListEnd
+
+
+%-----------PROJECTS-----------
+\section{Projects}
+    \resumeSubHeadingListStart
+      \resumeProjectHeading
+          {\textbf{Youtube Video Search} $|$ \emph{Python, OpenAI, NextJS, PostgreSQL, Typescript}}{\href{https://github.com/rkaahean/ask-ltt-wan}{\underline{github.com/youtube-search}}}
+          \resumeItemListStart
+            \resumeItem{Created a website that video-searched podcasts of a popular YouTube channel. Converted raw data into audio and transcribed it using whisper.cpp.}
+            \resumeItem{Used pgvector to store and query embeddings, and generated context summary with gpt-3.5-turbo.}
+          \resumeItemListEnd
+      \resumeProjectHeading
+          {\textbf{MyAnimeList CLI} $|$ \emph{Rust}}{\href{https://github.com/rkaahean/mal-cli}{\underline{github.com/mal}}}
+          \resumeItemListStart
+            \resumeItem{Created a interactive CLI client in Rust to list anime based on a user's profile}
+            \resumeItem{Display detailed information regarding a show by parsing API}
+          \resumeItemListEnd
+    \resumeSubHeadingListEnd
+
+
+%-------------------------------------------
+\end{document}
