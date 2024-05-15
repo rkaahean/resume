@@ -131,10 +131,10 @@
  \begin{itemize}[leftmargin=0.15in, label={}]
     \small{\item{
      \textbf{Languages \& Frameworks}{: SQL, Python, Typescript, React, Next.js} \\
-     \textbf{DevOps}{: CI/CD, Docker, AWS SAA Certified (SAA\-C02)} \\
-     \textbf{Data Management}{: ETL pipelines, pandas \& dask, dbt, Snowflake, FiveTran}
+     \textbf{DevOps}{: CI/CD, Docker, Bazel, AWS SAA Certified (SAA\-C02)} \\
+     \textbf{Data Management}{: ETL pipelines, dbt, Snowflake, FiveTran}
     }} \\
-    \textbf{Data Science \& ML}{: PyTorch, matplotlib, scikit-learn, HuggingFace}
+    \textbf{Data Science \& ML}{: pandas \& dask, PyTorch, matplotlib, scikit-learn, OpenAI APIs}
  \end{itemize}
 
 
@@ -147,13 +147,13 @@
       {Software Engineer}{Feb 2021 -- Present}
       {ChipperCash}{Los Angeles, USA}
       \resumeItemListStart
-        \resumeItem{Productionized a heuristic using XGBoost and a Python ETL data pipeline to predict user risk at onboarding, which helped cut referral fraud by 60\% and saved \$350k}
-        \resumeItem{Deployed ML models for inference as a microservice using a Flask REST API’s, served over an event-driven architecture using RabbitMQ that handled \textgreater 1000 requests per minute with \textless100ms 95 percentile latency.}
+        \resumeItem{Deployed ML models for inference as a microservice using Flask REST APIs, served over an event-driven architecture using RabbitMQ that handled \textgreater 1000 requests per minute.}
+        \resumeItem{Implemented an ETL batch pipeline for computing user risk rating using Python, pandas (dask) \& dbt models processing 10M+ rows in $\sim$2 hours and providing analysts with fresh data in Snowflake.}
+        \resumeItem{Productionized a heuristic using XGBoost and a Python ETL data pipeline to predict user risk at onboarding, which helped cut referral fraud by 60\% and saved \$350k.}
         \resumeItem{Created a ML model to forecast chargeback likelihood on card deposits, using transaction velocity and previous chargeback history as key features, effectively blocking $\sim$\$1.5M in high-risk deposits.}
-        \resumeItem{Devised a Python pipeline using dask and dbt, capable of automatically declining up to 100 eligible chargebacks per minute, thereby saving 3 minutes of manual labor per chargeback and preventing losses of $\sim$\$4M.}
-        \resumeItem{Implemented an ETL batch pipeline for computing user risk rating using Python, pandas (dask) \& dbt models, processing 10M+ rows in $\sim$2 hours and providing analysts with data.}
+        \resumeItem{Devised an automated Python data pipeline that declined up to 100 chargebacks per minute, thereby saving 200 hours of manual labor and preventing potential losses of $\sim$\$4M.}
         \resumeItem{Collaborated with PMs and Marketing to build a full-stack in-app messaging system, spanning React Native screens in the Mobile App,
-        to backend REST APIs with Typescript - thereby saving $\sim$\$80k/year by phasing out vendors.}
+        to backend REST APIs with TypeScript - thereby saving $\sim$\$80k/year by phasing out vendors.}
       \resumeItemListEnd
       
 % -----------Multiple Positions Heading-----------
