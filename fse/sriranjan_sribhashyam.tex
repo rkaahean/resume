@@ -122,7 +122,7 @@
 
 \section{Summary}
 \small{
-  I am a Data Engineer with 4 years of experience in building data-pipelines and analytics engineering using Python along with dbt and Snowflake.
+  I am a Fullstack Engineer with 4 years of experience in building microservices \& product features with TypeScript, Node.JS and PostgreSQL.
   I am eligible for a \textbf{2 year visa}.
 }
 
@@ -130,11 +130,12 @@
 \section{Technical Skills}
  \begin{itemize}[leftmargin=0.15in, label={}]
     \small{\item{
-     \textbf{Languages \& Frameworks}{: SQL, Python, Typescript, Java, React, Next.js} \\
-     \textbf{DevOps}{: IaC (Terraform), CI/CD, Docker, Airflow, Kafka, AWS SAA Certified (SAA\-C02)} \\
-     \textbf{Data Management}{: ETL pipelines, dbt, Snowflake, FiveTran, PostgreSQL}
-    }} \\
-    \textbf{Data Science}{: Tableau, pandas \& dask, Py(Spark), OpenAI APIs}
+     \textbf{Languages \& Frameworks}{: Python, Javascript / TypeScript, Java, React (Next.js), Rust} \\
+     \textbf{API Development}{: Express, Flask (REST APIs), Jest} \\
+     \textbf{DevOps \& Testing}{: RabbitMQ, Docker, Airflow, Kafka, CI/CD (SemaphoreCI \& GitHub Actions))} \\
+     \textbf{Data Management}{: SQL, PostgreSQL, TypeORM, Prisma} \\
+     \textbf{Cloud Management \& Certificatons}{: AWS SAA Certified (SAA\-C02), GCP} \\
+    }}
  \end{itemize}
 
 
@@ -147,15 +148,13 @@
       {Software Engineer}{Feb 2021 -- June 2024}
       {ChipperCash}{Los Angeles, USA}
       \resumeItemListStart
-        \resumeItem{Implemented an ELT batch pipeline for computing user risk rating using Python, pandas (dask) \& dbt models processing 10M+ rows in $\sim$2 hours and providing analysts with fresh data in Snowflake.}
-        \resumeItem{Deployed ML models for inference as a microservice using Flask REST APIs, served over an event-driven architecture using RabbitMQ that handled \textgreater 1000 requests per minute.}
-        \resumeItem{Optimized data loads from Snowflake using Apache Arrow, which sped up pipeline speeds by up-to 10x and decreased credit usage up-to 16x.}
-        \resumeItem{Set up dbt for the analytics function which facilitated higher quality and faster data, for usage in upstream reporting tools like Looker \& Tableau.}
-        % \resumeItem{Productionized a heuristic using XGBoost and a Python ETL data pipeline to predict user risk at onboarding, which helped cut referral fraud by 60\% and saved \$350k.}
-        % \resumeItem{Created a ML model to forecast chargeback likelihood on card deposits, using transaction velocity and previous chargeback history as key features, effectively blocking $\sim$\$1.5M in high-risk deposits.}
-        \resumeItem{Devised an automated Python data pipeline that declined up to 100 chargebacks per minute, thereby saving 200 hours of manual labor and preventing potential losses of $\sim$\$4M.}
         \resumeItem{Collaborated with PMs and Marketing to build a full-stack in-app messaging system, spanning React Native screens in the Mobile App,
-        to backend REST APIs with TypeScript - thereby saving $\sim$\$80k/year by phasing out vendors.}
+to backend REST APIs with TypeScript - thereby saving $\sim$\$80k/year by phasing out vendors.}
+        \resumeItem{Deployed a ML model for inference as a microservice using Flask API’s and docker, served over RabbitMQ to predict chargeback probability and thereby block high-risk deposits worth $\sim$\$1.5M.}
+        \resumeItem{Improved Python ETL pipeline builds in Bazel by adding requirements.txt lockfiles, cutting build times by $\sim$23\%.}
+        \resumeItem{Leveraged Docker and blue-green deployments for microservices to migrate existing user screening to an open-source solution with 0 downtime, saving about \$200k/month.}
+        \resumeItem{Devised a Python data pipeline that declined up to 100 chargebacks per minute, thereby saving ~200 hours of manual labor and preventing potential losses of $\sim$\$4M.}
+        \resumeItem{Architected an event-driven system for bulk push notifications across iOS and Android platforms utilizing RabbitMQ and Firebase Topics, enabling communication with over 10M users within minutes.}
       \resumeItemListEnd
       
 % -----------Multiple Positions Heading-----------
@@ -206,7 +205,7 @@ foundation for dynamically scalable ML applications based on resource requiremen
 \section{Projects}
     \resumeSubHeadingListStart
       \resumeProjectHeading
-          {\textbf{Youtube Video Search} $|$ \emph{Python, OpenAI, Next.js, PostgreSQL, Typescript}}{\href{https://github.com/rkaahean/ask-ltt-wan}{\underline{github.com/youtube-search}}}
+          {\textbf{Youtube Video Search} $|$ \emph{Python, OpenAI, Next.js, PostgreSQL, TypeScript}}{\href{https://github.com/rkaahean/ask-ltt-wan}{\underline{github.com/youtube-search}}}
           \resumeItemListStart
             \resumeItem{Created a website that video-searched podcasts of a popular YouTube channel. Converted raw data into audio and transcribed it using whisper.cpp.}
             \resumeItem{Used pgvector to store and query embeddings, and generated context summary with gpt-3.5-turbo.}
@@ -215,7 +214,7 @@ foundation for dynamically scalable ML applications based on resource requiremen
           {\textbf{MyAnimeList CLI} $|$ \emph{Rust}}{\href{https://github.com/rkaahean/mal-cli}{\underline{github.com/mal}}}
           \resumeItemListStart
             \resumeItem{Created an interactive CLI client in Rust to list anime based on a user's profile.}
-            \resumeItem{Display detailed information regarding a show by parsing API.}
+            \resumeItem{Display detailed information regarding a show by parsing .}
           \resumeItemListEnd
     \resumeSubHeadingListEnd
 
